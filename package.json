@@ -1,0 +1,19 @@
+{
+  "name": "phaser3-my-story",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MishynMykhailo/phaser3-my-story.git"
+  },
+  "author": "Mishyn Mykhailo <misham18092001@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MishynMykhailo/phaser3-my-story/issues"
+  },
+  "homepage": "https://github.com/MishynMykhailo/phaser3-my-story#readme"
+}
