@@ -1,19 +1,38 @@
 {
   "name": "phaser3-my-story",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.1.2",
+  "description": "phaser3-my-story",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack/prod.js ",
+    "start": "webpack-dev-server --config webpack/base.js --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MishynMykhailo/phaser3-my-story.git"
+    "url": "git+https://mishynmykhailo.github.io/phaser3-my-story/"
   },
-  "author": "Mishyn Mykhailo <misham18092001@gmail.com>",
-  "license": "ISC",
+  "author": "Mishyn Mykhailo",
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
   "bugs": {
-    "url": "https://github.com/MishynMykhailo/phaser3-my-story/issues"
+    "url": "https://mishynmykhailo.github.io/phaser3-my-story/"
   },
-  "homepage": "https://github.com/MishynMykhailo/phaser3-my-story#readme"
+  "homepage": "https://mishynmykhailo.github.io/phaser3-my-story/",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^3.1.0",
+    "terser-webpack-plugin": "^2.2.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "phaser": "^3.50.0"
+  }
 }
