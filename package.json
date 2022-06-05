@@ -2,10 +2,11 @@
   "name": "phaser3-my-story",
   "version": "1.1.2",
   "description": "phaser3-my-story",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --config webpack/base.js --open"
+    "start": "webpack-dev-server --config webpack/base.js --open",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "phaser": "^3.50.0"
   }
 }
