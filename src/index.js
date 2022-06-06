@@ -5,39 +5,39 @@ class MyScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("background1", "src/assets/background1.jpg");
+    this.load.image("background1", "assets/background1.jpg");
     // button
     this.load.image(
       "button-first-right",
-      "src/assets/buttonDress/button-first-right.png"
+      "assets/buttonDress/button-first-right.png"
     );
     this.load.image(
       "button-first-left",
-      "src/assets/buttonDress/button-first-left.png"
+      "assets/buttonDress/button-first-left.png"
     );
     this.load.image(
       "button-two-right",
-      "src/assets/buttonDress/button-two-right.png"
+      "assets/buttonDress/button-two-right.png"
     );
     this.load.image(
       "button-two-left",
-      "src/assets/buttonDress/button-two-left.png"
+      "assets/buttonDress/button-two-left.png"
     );
     this.load.image(
       "button-tree-right",
-      "src/assets/buttonDress/button-tree-right.png"
+      "assets/buttonDress/button-tree-right.png"
     );
     this.load.image(
       "button-tree-left",
-      "src/assets/buttonDress/button-tree-left.png"
+      "assets/buttonDress/button-tree-left.png"
     );
     this.load.image(
       "button-four-right",
-      "src/assets/buttonDress/button-four-right.png"
+      "assets/buttonDress/button-four-right.png"
     );
     this.load.image(
       "button-four-left",
-      "src/assets/buttonDress/button-four-left.png"
+      "assets/buttonDress/button-four-left.png"
     );
     // this.load.image()
     // this.load.image()
@@ -45,34 +45,34 @@ class MyScene extends Phaser.Scene {
 
     this.load.image(
       "chooseDress",
-      "src/assets/chooseDress.png",
+      "assets/chooseDress.png",
       "chooseBag",
-      "src/assets/chooseBag.png"
+      "assets/chooseBag.png"
     );
-    this.load.image("chooseBag", "src/assets/chooseBag.png");
-    this.load.image("chooseAcs", "src/assets/chooseAcs.png");
-    this.load.image("choosePlace", "src/assets/choosePlace.png");
+    this.load.image("chooseBag", "assets/chooseBag.png");
+    this.load.image("chooseAcs", "assets/chooseAcs.png");
+    this.load.image("choosePlace", "assets/choosePlace.png");
     //player
-    this.load.spritesheet("man-sprite", "src/assets/man-sprite.png", {
+    this.load.spritesheet("man-sprite", "assets/man-sprite.png", {
       frameWidth: 400,
       frameHeight: 909,
     });
-    this.load.spritesheet("woman-sprite", "src/assets/woman-sprite.png", {
+    this.load.spritesheet("woman-sprite", "assets/woman-sprite.png", {
       frameWidth: 399.8,
       frameHeight: 909,
     });
     //talk Player
-    this.load.image("manPlayer-talk", "src/assets/manPlayer-talk.png");
-    this.load.image("womanPlayer-talk", "src/assets/womanPlayer-talk.png");
-    this.load.image("finally-Text-True", "src/assets/finallyTextTrue.png");
+    this.load.image("manPlayer-talk", "assets/manPlayer-talk.png");
+    this.load.image("womanPlayer-talk", "assets/womanPlayer-talk.png");
+    this.load.image("finally-Text-True", "assets/finallyTextTrue.png");
     ///help-heders
-    this.load.image("handError", "src/assets/handError.png");
-    this.load.image("background2", "src/assets/background2.jpg");
-    this.load.image("background3", "src/assets/background3.jpg");
+    this.load.image("handError", "assets/handError.png");
+    this.load.image("background2", "assets/background2.jpg");
+    this.load.image("background3", "assets/background3.jpg");
     //audio
     this.load.audio("myStorySound", [
-      "src/assets/audio/myStory.mp3",
-      "src/assets/audio/myStory.ogg",
+      "assets/audio/myStory.mp3",
+      "assets/audio/myStory.ogg",
     ]);
   }
 
