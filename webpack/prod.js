@@ -6,6 +6,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = merge(base, {
   mode: "production",
   output: {
+    publicPath: "/phaser3-my-story",
     filename: "bundle.min.js",
   },
   devtool: false,
@@ -18,7 +19,6 @@ module.exports = merge(base, {
       new TerserPlugin({
         terserOptions: {
           output: {
-            publicPath: "/phaser3-my-story",
             comments: false,
           },
         },
