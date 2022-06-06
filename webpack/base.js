@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -19,10 +20,6 @@ module.exports = {
         test: [/\.vert$/, /\.frag$/],
         use: "raw-loader",
       },
-      {
-        test: /\.(gif|png|jpg|jpeg|svg|xml)$/i,
-        use: "file-loader",
-      },
     ],
   },
   plugins: [
@@ -36,5 +33,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./index.html",
     }),
+    new CopyWebpackPlugin([{ from: "src/assets", to: "assets" }]),
   ],
 };
