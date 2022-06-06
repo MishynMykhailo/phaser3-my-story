@@ -20,8 +20,8 @@ module.exports = {
         use: "raw-loader",
       },
       {
-        test: /\.(gif|png|jpe?g|svg|xml)$/i,
-        use: "asset/resource",
+        test: /\.(gif|png|jpg|jpeg|svg|xml)$/i,
+        use: "file-loader",
       },
     ],
   },
